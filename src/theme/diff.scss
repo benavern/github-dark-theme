@@ -55,6 +55,10 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
     border-right: 1px solid $border-color !important;
 }
 
+.blob-num-context, .blob-code-context {
+    background-color: $bg-color !important;
+}
+
 .blob-num {
     border-right: 1px solid $border-color !important;
 }
@@ -65,7 +69,7 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
 }
 
 .pr-toolbar {
-    background-color: $tag-bg-color !important;
+    background-color: transparent !important;
     .subset-files-tab {
         background-color: $bg-color !important;
         color: $link-color !important;
@@ -83,3 +87,15 @@ tr:not(.blob-expanded) + .blob-expanded .blob-num {
         background-color: $codecov-num-bg-color-partial !important;
     }
 }
+
+.highlight-source-diff {
+    .pl-md {
+        color: $text-red-color !important;
+        background: $diff-deletion !important;
+    }
+    .pl-mi1 {
+        color: $text-green-color !important;
+        background: $diff-addition !important;
+    }
+}
+
